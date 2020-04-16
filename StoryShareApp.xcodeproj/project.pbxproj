@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B72B03672448F991003ECFAA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72B03662448F991003ECFAA /* Utilities.swift */; };
 		B758FAEF2448DF940011B758 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758FAEE2448DF940011B758 /* AppDelegate.swift */; };
 		B758FAF12448DF940011B758 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758FAF02448DF940011B758 /* SceneDelegate.swift */; };
 		B758FAF32448DF940011B758 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758FAF22448DF940011B758 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B72B03662448F991003ECFAA /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		B758FAEB2448DF940011B758 /* StoryShareApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryShareApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B758FAEE2448DF940011B758 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B758FAF02448DF940011B758 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B72B03682448FD7E003ECFAA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B72B03662448F991003ECFAA /* Utilities.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		B758FAE22448DF940011B758 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +72,7 @@
 		B758FAED2448DF940011B758 /* StoryShareApp */ = {
 			isa = PBXGroup;
 			children = (
+				B72B03682448FD7E003ECFAA /* Helpers */,
 				B758FB082448E0170011B758 /* View Controllers */,
 				B758FAEE2448DF940011B758 /* AppDelegate.swift */,
 				B758FAF02448DF940011B758 /* SceneDelegate.swift */,
@@ -157,6 +168,7 @@
 			files = (
 				B758FAF32448DF940011B758 /* ViewController.swift in Sources */,
 				B758FAEF2448DF940011B758 /* AppDelegate.swift in Sources */,
+				B72B03672448F991003ECFAA /* Utilities.swift in Sources */,
 				B758FB032448DFF20011B758 /* SignUpViewController.swift in Sources */,
 				B758FB052448E0010011B758 /* LoginViewController.swift in Sources */,
 				B758FAF12448DF940011B758 /* SceneDelegate.swift in Sources */,

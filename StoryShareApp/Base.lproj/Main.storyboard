@@ -50,6 +50,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ryf-jK-ySS"/>
+                    <connections>
+                        <outlet property="loginButton" destination="1f7-ff-RbD" id="G0r-Az-hea"/>
+                        <outlet property="signUpButton" destination="fDb-yt-rNo" id="cGx-XK-xvm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
