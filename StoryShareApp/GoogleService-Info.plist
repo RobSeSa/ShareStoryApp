@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>955800560177-6m2jrj1sm29vulpvl67tmc6ivkjd0fj4.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.955800560177-6m2jrj1sm29vulpvl67tmc6ivkjd0fj4</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC21Jzxm3sbXKpJktekklJLMR2xPpVujvk</string>
+	<key>GCM_SENDER_ID</key>
+	<string>955800560177</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.robertsato.StoryShareApp</string>
+	<key>PROJECT_ID</key>
+	<string>story-share-app-81ce9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>story-share-app-81ce9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:955800560177:ios:084afe36dbe069f1adeb10</string>
+	<key>DATABASE_URL</key>
+	<string>https://story-share-app-81ce9.firebaseio.com</string>
+</dict>
+</plist>
