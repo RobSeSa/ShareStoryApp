@@ -17,6 +17,7 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var occupationTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
@@ -39,6 +40,7 @@ class SignUpViewController: UIViewController {
         Utilities.styleTextField(lastNameTextField)
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
+        Utilities.styleTextField(occupationTextField)
         Utilities.styleFilledButton(signUpButton)
         
     }
@@ -50,7 +52,8 @@ class SignUpViewController: UIViewController {
         if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            occupationTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
                 return "Please fill in all fields."
         }
         else if Utilities.isPasswordValid(passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)) == false {
@@ -81,6 +84,7 @@ class SignUpViewController: UIViewController {
             let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let occupation = occupationTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             // Create the user
             Auth.auth().createUser(withEmail: email, password: password) { (result, err) in
@@ -93,7 +97,7 @@ class SignUpViewController: UIViewController {
                 else {
                     // User was created successfuly, store the first and last name
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "uid":result!.user.uid]) { (error) in
+                    db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "occupation":occupation, "uid":result!.user.uid]) { (error) in
                         if error != nil {
                             // Show error message
                             self.showError("Error saving user data")
