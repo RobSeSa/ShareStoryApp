@@ -18,6 +18,7 @@
 		B758FB032448DFF20011B758 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758FB022448DFF20011B758 /* SignUpViewController.swift */; };
 		B758FB052448E0010011B758 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758FB042448E0010011B758 /* LoginViewController.swift */; };
 		B758FB072448E0100011B758 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B758FB062448E0100011B758 /* HomeViewController.swift */; };
+		B76E90D12450162D00235311 /* WriteStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76E90D02450162D00235311 /* WriteStoryViewController.swift */; };
 		B79E33DC244BE22800F04511 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B79E33DB244BE22800F04511 /* GoogleService-Info.plist */; };
 		B7D5C1C7244BF0850089F800 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7D5C1C6244BF0850089F800 /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -37,6 +38,7 @@
 		B758FB022448DFF20011B758 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B758FB042448E0010011B758 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B758FB062448E0100011B758 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B76E90D02450162D00235311 /* WriteStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteStoryViewController.swift; sourceTree = "<group>"; };
 		B79E33DB244BE22800F04511 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B7D5C1C6244BF0850089F800 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CD8A40B0D32AF3A6D79E3B72 /* Pods-StoryShareApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryShareApp.debug.xcconfig"; path = "Target Support Files/Pods-StoryShareApp/Pods-StoryShareApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				B758FB022448DFF20011B758 /* SignUpViewController.swift */,
 				B758FB042448E0010011B758 /* LoginViewController.swift */,
 				B758FB062448E0100011B758 /* HomeViewController.swift */,
+				B76E90D02450162D00235311 /* WriteStoryViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				B758FAF32448DF940011B758 /* ViewController.swift in Sources */,
 				B758FAEF2448DF940011B758 /* AppDelegate.swift in Sources */,
 				B72B03672448F991003ECFAA /* Utilities.swift in Sources */,
+				B76E90D12450162D00235311 /* WriteStoryViewController.swift in Sources */,
 				B758FB032448DFF20011B758 /* SignUpViewController.swift in Sources */,
 				B758FB052448E0010011B758 /* LoginViewController.swift in Sources */,
 				B758FAF12448DF940011B758 /* SceneDelegate.swift in Sources */,

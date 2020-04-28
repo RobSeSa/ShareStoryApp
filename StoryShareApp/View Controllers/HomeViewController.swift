@@ -7,13 +7,28 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
+import FirebaseFirestore
 
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let db = Firestore.firestore()
+        
+        print("getting documents")
+        db.collection("stories").getDocuments { (snapshot, error) in
+            if error == nil && snapshot != nil {
+                for document in snapshot!.documents {
+                    let documentData = document.data()
+                    print(documentData)
+                }
+            }
+        }
+        
+        
     }
     
 
