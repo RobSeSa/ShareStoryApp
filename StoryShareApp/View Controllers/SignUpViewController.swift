@@ -13,13 +13,14 @@ import FirebaseFirestore
 
 class SignUpViewController: UIViewController {
 
-    @IBOutlet weak var firstNameTextField: UITextField!
-    @IBOutlet weak var lastNameTextField: UITextField!
+
+    @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var occupationTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
+    @IBOutlet weak var cancelButton: UIButton!
     
     
     
@@ -36,12 +37,12 @@ class SignUpViewController: UIViewController {
         errorLabel.alpha = 0
         
         // Style the elements
-        Utilities.styleTextField(firstNameTextField)
-        Utilities.styleTextField(lastNameTextField)
+        Utilities.styleTextField(userNameTextField)
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleTextField(occupationTextField)
         Utilities.styleFilledButton(signUpButton)
+        Utilities.styleHollowButton(cancelButton)
         
     }
     
@@ -49,8 +50,7 @@ class SignUpViewController: UIViewController {
     func validateFields() -> String? {
         
         // Check that all fields are filled in
-        if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+        if userNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             occupationTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
@@ -80,8 +80,7 @@ class SignUpViewController: UIViewController {
         else {
             
             // Create cleaned versions of the data
-            let firstName = firstNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let userName = userNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let occupation = occupationTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -95,9 +94,9 @@ class SignUpViewController: UIViewController {
                     print("err = ", err!)
                 }
                 else {
-                    // User was created successfuly, store the first and last name
+                    // User was created successfuly, store their information
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data: ["firstname":firstName, "lastname":lastName, "occupation":occupation, "uid":result!.user.uid]) { (error) in
+                    db.collection("users").addDocument(data: ["userName":userName, "occupation":occupation, "uid":result!.user.uid]) { (error) in
                         if error != nil {
                             // Show error message
                             self.showError("Error saving user data")

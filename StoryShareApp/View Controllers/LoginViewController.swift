@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
     
@@ -34,6 +35,7 @@ class LoginViewController: UIViewController {
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(loginButton)
+        Utilities.styleHollowButton(cancelButton)
         
     }
 

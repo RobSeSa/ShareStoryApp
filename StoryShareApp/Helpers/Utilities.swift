@@ -14,7 +14,6 @@ import UIKit
 class Utilities {
     static func styleTextField(_ textfield:UITextField) {
         
-        print("styling a text field")
         // Create the bottom line
         let bottomLine = CALayer()
         
