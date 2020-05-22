@@ -72,5 +72,6 @@ class WriteStoryViewController: UIViewController {
                     }
                 }
         }
+        
     }
 }

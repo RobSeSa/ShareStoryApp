@@ -12,12 +12,14 @@ class StoryModel{
     var occupation: String?
     var story: String?
     var likes: Int?
+    var storyID: String?
     
-    init(author:String?, occupation:String?, story:String?, likes:Int?){
+    init(author:String?, occupation:String?, story:String?, likes:Int?, storyID:String?){
         self.author = author
         self.occupation = occupation
         self.story = story
         self.likes = likes
+        self.storyID = storyID
     }
     
 }

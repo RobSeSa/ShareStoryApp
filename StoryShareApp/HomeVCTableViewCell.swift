@@ -14,8 +14,11 @@ class HomeVCTableViewCell: UITableViewCell {
     @IBOutlet weak var occupationLabel: UILabel!
     @IBOutlet weak var storyLabel: UILabel!
     @IBOutlet weak var likesLabel: UILabel!
+    @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var deleteButton: UIButton!
     
-    
+    var likeButtonAction: ((UITableViewCell) -> Void)?
+    var deleteButtonAction: ((UITableViewCell) -> Void)?
     
     
     override func awakeFromNib() {
@@ -28,5 +31,13 @@ class HomeVCTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    @IBAction func likeButtonPressed(_ sender: Any) {
+        likeButtonAction?(self)
+    }
+    
+    
+    @IBAction func deleteButtonPressed(_ sender: Any) {
+        deleteButtonAction?(self)
+    }
+    
 }
